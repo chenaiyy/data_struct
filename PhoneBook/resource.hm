@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by PhoneBook.rc
+//
+#define HIDC_TELEPHONE                  0x806603ea    // IDD_PHONEBOOK_DIALOG

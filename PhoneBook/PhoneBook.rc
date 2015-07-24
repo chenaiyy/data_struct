@@ -1,0 +1,257 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PhoneBook.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PhoneBook.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PhoneBook"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PhoneBook 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PHONEBOOK_DIALOG DIALOGEX 0, 0, 496, 255
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PhoneBook"
+FONT 9, "宋体"
+BEGIN
+    CTEXT           "姓名",IDC_NAME,19,19,37,16,SS_CENTERIMAGE
+    CTEXT           "住宅号码",IDC_HOMEPHONE,13,57,37,16,SS_CENTERIMAGE
+    CTEXT           "手机号",IDC_TELEPHONE,17,39,37,16,SS_CENTERIMAGE,0,
+                    HIDC_TELEPHONE
+    CTEXT           "办公电话",IDC_OFFICEPHONE,13,75,37,16,SS_CENTERIMAGE
+    CTEXT           "所属群",IDC_GROUP,16,109,37,16,SS_CENTERIMAGE
+    CTEXT           "邮箱地址",IDC_EMAIL,13,92,37,16,SS_CENTERIMAGE
+    CTEXT           "备注",IDC_RECORD,18,125,37,16,SS_CENTERIMAGE
+    EDITTEXT        ID_NAME,63,22,64,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_TELEPHONE,64,39,64,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_HPHONE,64,56,64,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_OPHONE,64,75,64,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_EMAIL,63,91,66,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_GROUP,64,111,66,12,ES_AUTOHSCROLL
+    EDITTEXT        ID_RECOARD,13,143,212,43,ES_AUTOHSCROLL
+    PUSHBUTTON      "上一个",IDC_UP,185,19,43,12
+    PUSHBUTTON      "下一个",IDC_DOWN,186,39,43,12
+    PUSHBUTTON      "添加",IDC_ADD,185,57,43,12
+    PUSHBUTTON      "修改",IDC_ALTER,186,75,43,12
+    PUSHBUTTON      "更新",IDC_UPDATE,186,93,43,12
+    PUSHBUTTON      "删除",IDC_DELETE,185,110,43,12
+    EDITTEXT        IDC_SEARCH1,81,213,71,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "按姓名查询",IDC_NAMESEARCH,13,193,50,13
+    PUSHBUTTON      "按手机号查询",IDC_TELEPHONESEARCH,69,193,50,13
+    PUSHBUTTON      "按住宅号查询",IDC_HPHONESEARCH,123,193,50,13
+    PUSHBUTTON      "按办公号查询",IDC_OPHONESEARCH,177,194,50,13
+    LISTBOX         IDC_LIST1,265,29,73,168,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "所有名片",IDC_STATIC,265,15,40,10
+    LISTBOX         IDC_LIST2,362,46,77,149,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "群组：",IDC_STATIC,361,13,26,10
+    COMBOBOX        IDGROUP,361,30,42,91,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "导出数据",IDC_OUTPUT,394,213,49,15
+    PUSHBUTTON      "载入数据",IDC_INPUT,328,215,49,12
+    PUSHBUTTON      "确定",IDC_BUTTON1,409,29,26,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PhoneBook Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PhoneBook\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PhoneBook.EXE\0"
+            VALUE "ProductName", "PhoneBook 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PHONEBOOK_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 487
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PHONEBOOK_DIALOG DLGINIT
+BEGIN
+    IDGROUP, 0x403, 5, 0
+0xe4c6, 0xfccb, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PhoneBook(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PhoneBook.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

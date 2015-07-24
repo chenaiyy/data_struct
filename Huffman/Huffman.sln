@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Huffman", "Huffman.vcproj", "{7756DC45-AFAC-4F47-A728-F5906748DB39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7756DC45-AFAC-4F47-A728-F5906748DB39}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7756DC45-AFAC-4F47-A728-F5906748DB39}.Debug|Win32.Build.0 = Debug|Win32
+		{7756DC45-AFAC-4F47-A728-F5906748DB39}.Release|Win32.ActiveCfg = Release|Win32
+		{7756DC45-AFAC-4F47-A728-F5906748DB39}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
